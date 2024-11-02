@@ -1,0 +1,48 @@
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  transition: color 0.2s linear;
+}
+
+.menu ul li a:hover {
+  color: white;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  gap: 10px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.logo h1 {
+  width: 100px;
+}
+
+.header-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header {
+  padding: 20px;
+  background-color: antiquewhite;
+  transition: background-color 0.3s linear;
+}
+
+header:hover {
+  background-color: rgb(238, 120, 120);
+}

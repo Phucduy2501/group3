@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giao hàng nhanh bằng drone</title>
+
+    <!-- icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font gg  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./src/css/index.css" />
+
+    <link rel="stylesheet" href="./src/css/header.css" />
+
+    <link rel="stylesheet" href="./src/css/carousel.css" />
+    <link rel="stylesheet" href="./src/css/services.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img
+            src="./public/img/f074c24ea9734fdbc28643e601fd216c.png"
+            alt="logo"
+          />
+          <h1>GROUP3</h1>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li>
+              <a href="./gioithieu.html">Giới thiệu</a>
+            </li>
+            <li>
+              <a href="#">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">Ưu đãi<i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                >Chính sách <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section id="carousel">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img
+            src="./public/img/cf1dd4eb-4281-4932-a5d6-414f9e8b375e.webp"
+            style="width: 100%; height: 700px"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img
+            src="./public/img/cf1dd4eb-4281-4932-a5d6-414f9e8b375e.webp"
+            style="width: 100%; height: 700px"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img
+            src="./public/img/bc1e6aa7-b84d-423b-be17-72aa886cb509.webp"
+            style="width: 100%; height: 700px"
+          />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div class="nut" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+    <section id="services">
+      <div class="border">
+        <div class="giaohang giaohang__bd">
+          <div class="giaohang__lf">
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div class="giaohang__rt">
+            <h4>Giao hàng siêu tốc</h4>
+            <p>Giao hàng trong 24h</p>
+          </div>
+        </div>
+        <div class="giaohang giaohang__bd">
+          <div class="giaohang__lf">
+            <i class="fa-solid fa-headphones"></i>
+          </div>
+          <div class="giaohang__rt">
+            <h4>Tư vấn miễn phí</h4>
+            <p>Đội ngũ tư vấn tận tình</p>
+          </div>
+        </div>
+        <div class="giaohang giaohang__bd">
+          <div class="giaohang__lf">
+            <i class="fa-solid fa-money-bill"></i>
+          </div>
+          <div class="giaohang__rt">
+            <h4>Thanh toán</h4>
+            <p>Thanh toán an toàn</p>
+          </div>
+        </div>
+        <div class="giaohang">
+          <div class="giaohang__lf">
+            <i class="fa-solid fa-gift"></i>
+          </div>
+          <div class="giaohang__rt">
+            <h4>Giải pháp quà tặng</h4>
+            <p>Dành cho doanh nghiệp</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--! slider   -->
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.chuyentrang a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#gioithieu {
+  padding: 50px 250px;
+  background-color: #4be0967e;
+  margin: 0 auto;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.text {
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 100px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.hr__gt {
+  margin: 0;
+  height: 5px;
+  background-color: yellow;
+  border: none;
+}

@@ -1,0 +1,57 @@
+#services {
+  margin-bottom: 100px;
+  padding-top: 20px;
+}
+
+.giaohang__lf i {
+  font-size: 35px;
+  color: #053024;
+  line-height: 55px;
+  transform: translateX(-12px);
+  transition: transform 0.5s ease;
+}
+.giaohang:hover i {
+  transform: translateX(0);
+}
+
+.giaohang__lf {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: antiquewhite;
+}
+
+.giaohang__rt h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #053024;
+}
+
+.giaohang__rt p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.giaohang {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* border-right: 2px solid black; */
+  padding: 20px;
+  text-align: center;
+}
+
+.giaohang__bd {
+  border-right: 2px solid black;
+}
+
+.border {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  width: 1070px;
+  /* padding: 20px 0; */
+  margin: 0 auto;
+}
