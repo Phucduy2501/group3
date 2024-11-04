@@ -1,0 +1,89 @@
+#giamgia {
+  background-color: #f1e8d7;
+  padding-bottom: 100px;
+}
+
+#giamgia h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.itembg__rt h4 {
+  margin: 0;
+}
+
+.itembg__rt p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.itembg__rt .content-bottom p {
+  font-size: 10px;
+}
+
+.copy-btn {
+  background-color: #053024;
+  color: white;
+  border: none;
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+}
+
+.copy-btn:hover {
+  background-color: #d0a73c;
+}
+
+.content-bottom {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.item__bg img {
+  width: 92px;
+  height: 92px;
+}
+
+.item__bg {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border: none;
+  width: 320px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+
+.item__bg .tron {
+  width: 20px;
+  height: 20px;
+  background-color: #f1e8d7;
+  position: absolute;
+  top: -10px;
+  left: 99px;
+  border-radius: 50%;
+}
+
+.item__bg .tron2 {
+  width: 20px;
+  height: 20px;
+  background-color: #f1e8d7;
+  position: absolute;
+  bottom: -10px;
+  left: 99px;
+  border-radius: 50%;
+}
+
+.giamgia__item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
