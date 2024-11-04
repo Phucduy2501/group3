@@ -30,3 +30,27 @@
   background-color: yellow;
   border: none;
 }
+
+.icon__chat i {
+  font-size: 35px;
+  background-color: #007bff;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.icon__chat:hover i {
+  background-color: #0069d9;
+}
+
+body {
+  position: relative;
+}
