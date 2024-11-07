@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./src/css/index.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
     <link rel="stylesheet" href="./src/css/gioithieu/gioithieu.css" />
+    <link rel="stylesheet" href="./src/css/chinhsach/chinhsach.css" />
   </head>
   <body>
     <header>
@@ -43,18 +44,35 @@
             <li>
               <a href="./gioithieu.html">Giới thiệu</a>
             </li>
-            <li>
+            <li id="sp">
               <a href="#">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
             </li>
-            <li>
-              <a href="#">Ưu đãi<i class="fa-solid fa-chevron-down"></i></a>
-            </li>
-            <li>
+            <li id="cs">
               <a href="#"
                 >Chính sách <i class="fa-solid fa-chevron-down"></i
               ></a>
             </li>
-            <li>
+            <ul id="chinhsach" class="chinhsach">
+              <li class="lics">
+                <a href="./chinhsach.html"> Chính sách mua hàng </a>
+              </li>
+              <li class="lics">
+                <a href="./csthanhtoan.html"> Chính sách thanh toán </a>
+              </li>
+              <li class="lics">
+                <a href="./csvanchuye.html"> Chính sách vận chuyển </a>
+              </li>
+              <li class="lics">
+                <a href="./camket.html"> Cam kết của hàng </a>
+              </li>
+              <li class="lics">
+                <a href="./csbaomat.html"> Chính sách bảo mật </a>
+              </li>
+              <li>
+                <a href="./csthanhvien.html"> Chính sách thành viên </a>
+              </li>
+            </ul>
+            <li id="lh">
               <a href="./lienhe.html">Liên hệ</a>
             </li>
           </ul>
@@ -96,5 +114,7 @@
     <div class="icon__chat">
       <i class="fa-brands fa-rocketchat"></i>
     </div>
+
+    <script src="./src/js/chinhsach/chinhsach.js"></script>
   </body>
 </html>
