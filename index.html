@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="./src/css/uudai.css" />
     <link rel="stylesheet" href="./src/css/giamgia.css" />
     <link rel="stylesheet" href="./src/css/chinhsach/chinhsach.css" />
+    <link rel="stylesheet" href="./src/css/sanpham/sp.css" />
   </head>
   <body>
     <!-- header -->
@@ -44,14 +45,22 @@
           <h1>GROUP3</h1>
         </div>
         <div class="menu">
-          <ul>
+          <ul class="header-container">
             <li><a href="./index.html">Trang chủ</a></li>
-            <li>
+            <li class="gt">
               <a href="./gioithieu.html">Giới thiệu</a>
             </li>
             <li id="sp">
               <a href="#">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
             </li>
+            <ul id="spdoan" class="spdoan">
+              <li class="aquan">
+                <a href="./sanphamaoquan/index.html">Áo Quần</a>
+              </li>
+              <li class="doan">
+                <a href="#">Đồ Ăn</a>
+              </li>
+            </ul>
             <li id="cs">
               <a href="#"
                 >Chính sách <i class="fa-solid fa-chevron-down"></i
@@ -280,5 +289,6 @@
     <!-- js  -->
     <script src="./src/js/chinhsach/chinhsach.js"></script>
     <script src="./src/js/mic.js"></script>
+    <script src="./src/js/sanpham/sanpham.js"></script>
   </body>
 </html>

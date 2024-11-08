@@ -30,3 +30,24 @@ let sPELe = document.getElementById("sp");
 sPELe.onmouseenter = function () {
   chinhSachEle.style.display = "none";
 };
+
+let sanPhamEle = document.getElementById("spdoan");
+console.log(sanPhamEle);
+
+sanPhamEle.style.display = "none";
+sPELe.onmouseenter = function () {
+  sanPhamEle.style.display = "block";
+};
+
+let headerContaiELe = document.querySelector(".header-container"); // Sửa thành headerContaiELe
+console.log(headerContaiELe);
+
+headerContaiELe.addEventListener("mouseleave", function () {
+  sanPhamEle.style.display = "none";
+});
+
+let gtEle = document.getElementById("gt");
+
+gtEle.onmouseenter = function () {
+  sanPhamEle.style.display = "none";
+};

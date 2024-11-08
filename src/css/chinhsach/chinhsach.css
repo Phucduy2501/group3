@@ -14,6 +14,7 @@ header .chinhsach {
   padding: 20px;
   border-radius: 20px;
   object-fit: 0;
+  transition: color 0.3s linear;
 }
 
 header .chinhsach .lics {
@@ -28,4 +29,8 @@ header .chinhsach .lics {
 
 header .menu .chinhsach {
   display: block;
+}
+
+header .chinhsach li a:hover {
+  color: red;
 }

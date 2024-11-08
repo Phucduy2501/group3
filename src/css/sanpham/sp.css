@@ -1,0 +1,35 @@
+header {
+  position: relative;
+}
+
+#carousel {
+  position: relative;
+}
+.spdoan {
+  position: absolute;
+  top: 60px;
+  right: 350px;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  transition: color 0.3s linear;
+}
+
+header .spdoan {
+  display: block;
+}
+
+header .spdoan .aquan {
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.197);
+}
+
+header .spdoan .doan {
+  padding-top: 10px;
+}
+
+header .spdoan li a:hover {
+  color: red;
+}
