@@ -88,3 +88,38 @@ img {
     opacity: 1;
   }
 }
+
+#carousel {
+  position: relative;
+}
+
+.carousel__input input {
+  width: 400px;
+  height: 60px;
+  padding-left: 10px;
+  background-color: rgba(255, 255, 255, 0.677);
+  font-size: 20px;
+  border: 1px solid rgba(30, 22, 22, 0.1);
+}
+
+.carousel__input {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  z-index: 1;
+}
+
+.carousel__input a {
+  text-decoration: none;
+}
+
+.carousel__input a i {
+  font-size: 30px;
+  color: black;
+  margin-left: 10px;
+  transition: color 0.3s linear;
+}
+
+.carousel__input a:hover i {
+  color: red;
+}
