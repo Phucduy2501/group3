@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="./src/css/giamgia.css" />
     <link rel="stylesheet" href="./src/css/chinhsach/chinhsach.css" />
     <link rel="stylesheet" href="./src/css/chinhsach/page.css" />
+    <link rel="stylesheet" href="./src/css/sanpham/sp.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
   </head>
   <body>
     <!-- header -->
@@ -45,14 +47,22 @@
           <h1>GROUP3</h1>
         </div>
         <div class="menu">
-          <ul>
+          <ul class="header-container">
             <li><a href="./index.html">Trang chủ</a></li>
-            <li>
+            <li class="gt">
               <a href="./gioithieu.html">Giới thiệu</a>
             </li>
             <li id="sp">
               <a href="#">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
             </li>
+            <ul id="spdoan" class="spdoan">
+              <li class="aquan">
+                <a href="./sanphamaoquan/index.html">Áo Quần</a>
+              </li>
+              <li class="doan">
+                <a href="./doan/doan.html">Đồ Ăn</a>
+              </li>
+            </ul>
             <li id="cs">
               <a href="#"
                 >Chính sách <i class="fa-solid fa-chevron-down"></i
@@ -124,7 +134,73 @@
         </p>
       </div>
     </section>
-
+    <!-- footer  -->
+    <footer>
+      <div class="footer__lf">
+        <h1>GROUP3</h1>
+        <ul>
+          <li>
+            <a href="#">Giới Thiệu</a>
+          </li>
+          <li>
+            <a href="#">Liên hệ</a>
+          </li>
+          <li>
+            <a href="#">Tuyển dụng</a>
+          </li>
+          <li>
+            <a href="#">Tin tức</a>
+          </li>
+        </ul>
+        <div class="footer__em">
+          <i class="fa-solid fa-envelope"></i>
+          email:
+          <a href="mailto: info@4menshop.com"> info@group3.com</a>
+        </div>
+        <div class="footer__em">
+          <i class="fa-solid fa-phone"></i>
+          Hotline:
+          <a href="tel:+0896234032">0896234032</a>
+        </div>
+      </div>
+      <div class="footer__bt">
+        <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+        <ul>
+          <li>
+            <a href="#">Hướng dẫn đặt hàng</a>
+          </li>
+          <li>
+            <a href="#">Hướng dẫn chọn size</a>
+          </li>
+          <li>
+            <a href="#">Câu hỏi thường gặp</a>
+          </li>
+          <li>
+            <a href="#">Thanh toán - Giao hàng</a>
+          </li>
+          <li>
+            <a href="#">Chính sách đổi hàng</a>
+          </li>
+          <li>
+            <a href="#">Chính sách bảo mật</a>
+          </li>
+          <li>
+            <a href="#">Chính sách cookie</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__ht">
+        <h5>HỆ THỐNG CỦA HÀNG</h5>
+        <a href="#" title="cua hang">
+          <img
+            loading="lazy"
+            src="https://4menshop.com/images/footer-map.jpg"
+            alt="dang ky bo cong thuong"
+          />
+        </a>
+        <a href="#">Tìm địa chỉ CỬA HÀNG gần bạn »</a>
+      </div>
+    </footer>
     <!-- js  -->
     <script src="./src/js/chinhsach/chinhsach.js"></script>
   </body>

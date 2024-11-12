@@ -30,8 +30,10 @@
     <link rel="stylesheet" href="./src/css/services.css" />
     <link rel="stylesheet" href="./src/css/uudai.css" />
     <link rel="stylesheet" href="./src/css/giamgia.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
     <link rel="stylesheet" href="./src/css/chinhsach/chinhsach.css" />
     <link rel="stylesheet" href="./src/css/sanpham/sp.css" />
+    <link rel="stylesheet" href="./src/css/gioithieu/gioithieu.css" />
   </head>
   <body>
     <!-- header -->
@@ -58,7 +60,7 @@
                 <a href="./sanphamaoquan/index.html">Áo Quần</a>
               </li>
               <li class="doan">
-                <a href="#">Đồ Ăn</a>
+                <a href="./doan/doan.html">Đồ Ăn</a>
               </li>
             </ul>
             <li id="cs">
@@ -252,6 +254,92 @@
       </div>
     </section>
 
+    <!-- footer  -->
+    <footer>
+      <div class="footer__lf">
+        <h1>GROUP3</h1>
+        <ul>
+          <li>
+            <a href="#">Giới Thiệu</a>
+          </li>
+          <li>
+            <a href="#">Liên hệ</a>
+          </li>
+          <li>
+            <a href="#">Tuyển dụng</a>
+          </li>
+          <li>
+            <a href="#">Tin tức</a>
+          </li>
+        </ul>
+        <div class="footer__em">
+          <i class="fa-solid fa-envelope"></i>
+          email:
+          <a href="mailto: info@4menshop.com"> info@group3.com</a>
+        </div>
+        <div class="footer__em">
+          <i class="fa-solid fa-phone"></i>
+          Hotline:
+          <a href="tel:+0896234032">0896234032</a>
+        </div>
+      </div>
+      <div class="footer__bt">
+        <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+        <ul>
+          <li>
+            <a href="#">Hướng dẫn đặt hàng</a>
+          </li>
+          <li>
+            <a href="#">Hướng dẫn chọn size</a>
+          </li>
+          <li>
+            <a href="#">Câu hỏi thường gặp</a>
+          </li>
+          <li>
+            <a href="#">Thanh toán - Giao hàng</a>
+          </li>
+          <li>
+            <a href="#">Chính sách đổi hàng</a>
+          </li>
+          <li>
+            <a href="#">Chính sách bảo mật</a>
+          </li>
+          <li>
+            <a href="#">Chính sách cookie</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__ht">
+        <h5>HỆ THỐNG CỦA HÀNG</h5>
+        <a href="#" title="cua hang">
+          <img
+            loading="lazy"
+            src="https://4menshop.com/images/footer-map.jpg"
+            alt="dang ky bo cong thuong"
+          />
+        </a>
+        <a href="#">Tìm địa chỉ CỬA HÀNG gần bạn »</a>
+      </div>
+    </footer>
+    <div class="icon__chat">
+      <i id="icon__chat" class="fa-brands fa-rocketchat"></i>
+    </div>
+    <div class="chatkhach">
+      <div class="chat-container" id="chatContainer">
+        <div class="iconxmark">
+          <i id="closeChat" class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="chat-box" id="chatBox">
+          <div class="message ai">
+            <p>Xin chào! Tôi có thể giúp gì cho bạn?</p>
+          </div>
+        </div>
+        <div class="input-box">
+          <input type="text" id="messageInput" placeholder="Nhập tin nhắn..." />
+          <button onclick="sendMessage()">Gửi</button>
+        </div>
+      </div>
+    </div>
     <!--! slider   -->
     <script>
       let slideIndex = 1;
@@ -290,5 +378,6 @@
     <script src="./src/js/chinhsach/chinhsach.js"></script>
     <script src="./src/js/mic.js"></script>
     <script src="./src/js/sanpham/sanpham.js"></script>
+    <script src="./src/js/chatkhach/script.js"></script>
   </body>
 </html>
