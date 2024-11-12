@@ -87,3 +87,13 @@
   justify-content: center;
   margin-top: 20px;
 }
+
+.hinhanhdrone {
+  background-color: #f1e8d7;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.hinhanhdrone img {
+  border-radius: 10px;
+}
