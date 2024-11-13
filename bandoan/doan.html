@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="../src/css/sanpham/sp.css" />
 
     <link rel="stylesheet" href="../src/css/gioithieu/gioithieu.css" />
+    <link rel="stylesheet" href="./css/item.css" />
   </head>
   <body>
     <header>
@@ -64,10 +65,10 @@
             </li>
             <ul id="spdoan" class="spdoan">
               <li class="aquan">
-                <a href="./index.html">Áo Quần</a>
+                <a href="../sanphamaoquan/index.html">Áo Quần</a>
               </li>
               <li class="doan">
-                <a href="../doan/doan.html">Đồ Ăn</a>
+                <a href="./doan.html">Đồ Ăn</a>
               </li>
             </ul>
             <li id="cs">
@@ -100,9 +101,26 @@
             </li>
           </ul>
         </div>
-        <i class="icon fa-solid fa-cart-shopping"></i>
+        <i id="dathangdoan" class="icon fa-solid fa-cart-shopping"></i>
       </div>
     </header>
+    <div id="giohangdoan" class="gio-hang">
+      <div class="giohang__bg">
+        <h2>Giỏ hàng</h2>
+        <i id="xmarkk" class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="san-pham">
+        <img style="height: 100px" src="./public/1cha-oc.jpg" alt="chả ốc" />
+        <h3>Chả ốc 1 phần</h3>
+        <p>Giá: 50.000₫</p>
+        <p>Số lượng: 1</p>
+      </div>
+      <p>Tổng tiền: 299.000₫</p>
+      <button class="themmon themmon__bg">Thêm món</button>
+      <button class="thanhtoan themmon">
+        <a href="../thanhtoan/thanhtoan.html">Thanh toán</a>
+      </button>
+    </div>
     <section id="timkiem">
       <div class="carousel__timkiem">
         <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm" />
@@ -115,6 +133,149 @@
       </div>
     </section>
     <hr />
+    <section id="item">
+      <h1>ĐỒ ĂN NHANH</h1>
+      <img
+        style="width: 700px; height: 600px"
+        src="./public/img/cec264ad-378a-4c48-aec2-56d6943d3895.webp"
+        alt=""
+      />
+    </section>
+    <section id="services">
+      <h1>Mã giảm giá</h1>
+      <div class="border">
+        <div class="giaohang giaohang__bd">
+          <div class="giaohang__lf">
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div class="giaohang__rt">
+            <h4>Giao hàng siêu tốc</h4>
+            <p>Giao hàng trong 24h</p>
+          </div>
+        </div>
+        <div class="giaohang giaohang__bd">
+          <div class="giaohang__lf">
+            <i class="fa-solid fa-headphones"></i>
+          </div>
+          <div class="giaohang__rt">
+            <h4>Tư vấn miễn phí</h4>
+            <p>Đội ngũ tư vấn tận tình</p>
+          </div>
+        </div>
+        <div class="giaohang giaohang__bd">
+          <div class="giaohang__lf">
+            <i class="fa-solid fa-money-bill"></i>
+          </div>
+          <div class="giaohang__rt">
+            <h4>Thanh toán</h4>
+            <p>Thanh toán an toàn</p>
+          </div>
+        </div>
+        <div class="giaohang">
+          <div class="giaohang__lf">
+            <i class="fa-solid fa-gift"></i>
+          </div>
+          <div class="giaohang__rt">
+            <h4>Giải pháp quà tặng</h4>
+            <p>Dành cho doanh nghiệp</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section id="doan">
+      <div class="khampha">
+        <h1>KHÁM PHÁ THỰC ĐƠN CỦA CHÚNG TÔI</h1>
+        <hr class="hr_doan" />
+      </div>
+      <div class="doan__bg">
+        <div class="doan__item">
+          <img src="./public/1cha-oc.jpg" alt="chả ốc" />
+          <h4>chả ốc 1 phần</h4>
+          <p>50.000đ</p>
+          <button class="datmon">ĐẶT MÓN</button>
+        </div>
+        <div class="doan__item">
+          <img src="./public/gaumuoiithaomoc.jpg" alt="gà ủ muối" />
+          <h4>Gà ủ muối (nguyên con)</h4>
+          <p>120.000đ</p>
+          <button class="datmon">ĐẶT MÓN</button>
+        </div>
+        <div class="doan__item">
+          <img src="./public/IMG_2976-scaled.jpg" alt="chả ốc" />
+          <h5 class="doan__item-h4">Gà không lối thoát (nguyên con)</h5>
+          <p>180.000đ</p>
+          <button class="datmon">ĐẶT MÓN</button>
+        </div>
+        <div class="doan__item">
+          <img
+            src="./public/2024_3_28_638472594671877582_ca-loc-chien-xu-1.jpg"
+            alt="chả ốc"
+          />
+          <h4>Cá chiên nguyên con</h4>
+          <p>80.000đ</p>
+          <button class="datmon">ĐẶT MÓN</button>
+        </div>
+      </div>
+      <div class="doan__bg">
+        <div class="doan__item">
+          <img src="./public/day2/chan-gio-chien.jpg" alt="chân giò" />
+          <h4>Chân giò chiên giòn mắm</h4>
+          <p>100.000đ</p>
+          <button class="datmon">ĐẶT MÓN</button>
+        </div>
+        <div class="doan__item">
+          <img src="./public/day2/cha-com.webp" alt="chả cốm" />
+          <h4>Chả cốm</h4>
+          <p>90.000đ</p>
+          <button class="datmon">ĐẶT MÓN</button>
+        </div>
+        <div class="doan__item">
+          <img src="./public/day2/vitomsau-1200x676.jpg" alt="chả ốc" />
+          <h4 class="doan__item-h4">Vịt om sấu</h4>
+          <p>180.000đ</p>
+          <button class="datmon">ĐẶT MÓN</button>
+        </div>
+        <div class="doan__item">
+          <img src="./public/day2/gio-xao.jpg" alt="chả ốc" />
+          <h4>giò xào</h4>
+          <p>150.000đ</p>
+          <button class="datmon">ĐẶT MÓN</button>
+        </div>
+      </div>
+      <div class="doan__bg">
+        <div class="doan__item">
+          <img
+            src="./public/day2/phanduong-2562-1409048626212891286dec4f29b3bb464b4.webp"
+            alt="chả ốc"
+          />
+          <h4>nem tai</h4>
+          <p>50.000đ</p>
+          <button class="datmon">ĐẶT MÓN</button>
+        </div>
+        <div class="doan__item">
+          <img
+            src="./public/day2/canh-dua-chua-thit-bo-3.jpg"
+            alt="gà ủ muối"
+          />
+          <h4>canh bò dưa hầm</h4>
+          <p>110.000đ</p>
+          <button class="datmon">ĐẶT MÓN</button>
+        </div>
+        <div class="doan__item">
+          <img src="./public/day2/images (1).jpg" alt="chả ốc" />
+          <h5 class="doan__item-h4">nạc nọng heo quay</h5>
+          <p>130.000đ</p>
+          <button class="datmon">ĐẶT MÓN</button>
+        </div>
+        <div class="doan__item">
+          <img src="./public/day2/maxresdefault.jpg" alt="chả ốc" />
+          <h4>thị heo quay</h4>
+          <p>70.000đ</p>
+          <button class="datmon">ĐẶT MÓN</button>
+        </div>
+      </div>
+    </section>
     <section id="policy">
       <div class="policy__item">
         <div class="policy__icon">
@@ -202,9 +363,6 @@
             <a href="#">Hướng dẫn đặt hàng</a>
           </li>
           <li>
-            <a href="#">Hướng dẫn chọn size</a>
-          </li>
-          <li>
             <a href="#">Câu hỏi thường gặp</a>
           </li>
           <li>
@@ -265,5 +423,6 @@
     <script src="../src/js/mic.js"></script>
     <script src="../src/js/sanpham/sanpham.js"></script>
     <script src="../src/js/chatkhach/script.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

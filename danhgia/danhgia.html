@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đánh giá đơn hàng</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="review-container">
+      <h2>Đánh giá đơn hàng</h2>
+
+      <form action="/submit-review" method="POST">
+        <label>Đánh giá:</label>
+        <div class="star-rating">
+          <input type="radio" id="star5" name="rating" value="5" />
+          <label for="star5" title="5 sao">☆</label>
+
+          <input type="radio" id="star4" name="rating" value="4" />
+          <label for="star4" title="4 sao">☆</label>
+
+          <input type="radio" id="star3" name="rating" value="3" />
+          <label for="star3" title="3 sao">☆</label>
+
+          <input type="radio" id="star2" name="rating" value="2" />
+          <label for="star2" title="2 sao">☆</label>
+
+          <input type="radio" id="star1" name="rating" value="1" />
+          <label for="star1" title="1 sao">☆</label>
+        </div>
+
+        <label for="comment">Nhận xét:</label>
+        <textarea
+          id="comment"
+          name="comment"
+          rows="4"
+          placeholder="Nhập nhận xét của bạn..."
+        ></textarea>
+
+        <button type="submit">Gửi đánh giá</button>
+      </form>
+    </div>
+  </body>
+</html>

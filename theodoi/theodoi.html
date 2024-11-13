@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theo dõi đơn hàng</title>
+
+    <link rel="stylesheet" href="./css/theodoi.css" />
+  </head>
+  <body>
+    <div class="tracking-container">
+      <h2>Theo dõi đơn hàng</h2>
+
+      <div class="order-info">
+        <p>Mã đơn hàng: <strong>#123456</strong></p>
+        <p>Trạng thái: <strong>Đang giao</strong></p>
+        <p>Dự kiến giao hàng: <strong>Ngày 20/11/2024</strong></p>
+      </div>
+
+      <!-- Phần bản đồ -->
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d268.9808259119934!2d108.2206457497389!3d16.05754152767933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142190728ae9c3b%3A0x3999e19fc07f6b9!2sENZO%20SPORT!5e0!3m2!1sen!2s!4v1731497758504!5m2!1sen!2s"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Google Maps API -->
+    <!-- <script async defer>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30683.535436280992!2d108.20017662524415!3d15.990494116358308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421de147a91f35%3A0x2024b073a69cadbe!2zSMOyYSBWYW5nLCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1731480057417!5m2!1svi!2s"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>;
+    </script> -->
+
+    <script>
+      function initMap() {
+        // Tọa độ ví dụ (bạn có thể thay thế bằng tọa độ thực của đơn hàng)
+        const orderLocation = { lat: 16.047079, lng: 108.20623 };
+
+        // Tạo bản đồ và đặt trung tâm tại vị trí của đơn hàng
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: orderLocation,
+        });
+
+        // Đánh dấu vị trí đơn hàng trên bản đồ
+        new google.maps.Marker({
+          position: orderLocation,
+          map,
+          title: "Vị trí hiện tại của đơn hàng",
+        });
+      }
+    </script>
+  </body>
+</html>
