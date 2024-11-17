@@ -72,25 +72,26 @@
   color: white;
 }
 
-.dndk {
+.logout {
   position: absolute;
-  right: 75px;
-  top: 5px;
-  background-color: aquamarine;
-  width: 125px;
-  padding: 10px;
+  right: 65px;
+  top: 80px;
+  align-items: center;
+  border: 1px solid black;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 3px;
+  width: 150px;
   border-radius: 10px;
 }
 
-.dndk a {
-  display: block;
-  line-height: 1.5;
-  text-decoration: none;
-  color: black;
-  transition: color 0.3s linear;
-  font-size: 16px;
+.logout i {
+  font-size: 20px;
+  margin-right: 10px;
 }
 
-.dndk a:hover {
-  color: red;
+.logout h3 {
+  margin: 0;
+  display: inline;
 }
