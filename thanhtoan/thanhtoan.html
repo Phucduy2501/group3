@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thanh toán đơn hàng</title>
 
+    <!-- icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <div class="checkout-container">
+      <a class="icon" id="icon-link"><i class="fa-solid fa-arrow-left"></i></a>
       <h2>Thanh toán đơn hàng</h2>
       <form action="/thanh-toan" method="POST">
         <label for="name">Họ và tên</label>
@@ -33,5 +43,20 @@
         <button type="submit">Thanh toán</button>
       </form>
     </div>
+
+    <script>
+      // Lấy phần tử link
+      const iconLink = document.getElementById("icon-link");
+      console.log("Current path:", window.location.pathname);
+      if (window.location.pathname.endsWith("/sanphamaoquan/index.html")) {
+        // Đặt link là chính nó
+        iconLink.href = "../sanphamaoquan/index.html";
+      } else {
+        iconLink.href = "../bandoan/doan.html";
+      }
+      console.log("Icon link:", iconLink.href);
+    </script>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

@@ -71,3 +71,26 @@
   text-decoration: none;
   color: white;
 }
+
+.dndk {
+  position: absolute;
+  right: 75px;
+  top: 5px;
+  background-color: aquamarine;
+  width: 125px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dndk a {
+  display: block;
+  line-height: 1.5;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s linear;
+  font-size: 16px;
+}
+
+.dndk a:hover {
+  color: red;
+}

@@ -46,3 +46,30 @@ header {
 header:hover {
   background-color: rgb(238, 120, 120);
 }
+
+header {
+  position: relative;
+}
+
+.dangnhaptk {
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  background-color: aquamarine;
+  width: 125px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dangnhaptk a {
+  display: block;
+  line-height: 1.5;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s linear;
+  font-size: 16px;
+}
+
+.dangnhaptk a:hover {
+  color: red;
+}
