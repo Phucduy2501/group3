@@ -91,7 +91,13 @@
   margin-right: 10px;
 }
 
-.logout h3 {
-  margin: 0;
-  display: inline;
+.logout h3 a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  transition: color 0.3s linear;
+}
+
+.logout h3 a:hover {
+  color: red;
 }
