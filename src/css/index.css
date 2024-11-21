@@ -7,3 +7,16 @@ body {
 * {
   box-sizing: border-box;
 }
+
+.input-box i {
+  font-size: 20px;
+  text-align: center;
+  line-height: 2.5;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.input-box i:hover {
+  color: red;
+}

@@ -101,13 +101,26 @@
     </header>
     <section id="carousel">
       <div class="carousel__input">
-        <input type="text" id="searchInput" placeholder="Tìm kiếm" />
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Tìm kiếm (Nhập, nói và hình ảnh)"
+        />
         <a href="#">
           <i class="fa-solid fa-magnifying-glass"></i>
         </a>
         <a href="#" onclick="startRecognition()">
           <i class="fa-solid fa-microphone"></i>
         </a>
+        <a href="#" id="imageLink">
+          <i class="fa-solid fa-image"></i>
+        </a>
+        <input
+          type="file"
+          id="fileInput"
+          style="display: none"
+          accept="image/*"
+        />
       </div>
       <div class="slideshow-container">
         <div class="mySlides fade">
@@ -343,6 +356,7 @@
         </div>
         <div class="input-box">
           <input type="text" id="messageInput" placeholder="Nhập tin nhắn..." />
+          <i onclick="startRecognition()" class="fa-solid fa-microphone"></i>
           <button onclick="sendMessage()">Gửi</button>
         </div>
       </div>
